@@ -24,20 +24,17 @@ for (const value of values) {
   <div class="card card--person">
     <div class="card__info">${value}<img src="images/${suit}.svg" alt="${suit}"></div>
     <img class="person" src="images/${personImage}.svg" alt="${suit}">
-    <div class="card__info">${value}<img src="images/${suit}.svg" alt="${suit}"></div>
-  </div>
-`;
+     <div class="card__info">${value}<img src="images/${suit}.svg" alt="${suit}"></div>
+   </div>`;
     } else {
-      html += `
-  <div class="card">
-    <div class="card__info">${value}<img src="images/${suit}.svg" alt="${suit}"></div>
-    <div class="card__info">${value}<img src="images/${suit}.svg" alt="${suit}"></div>
-  </div>
-`;
+      html += `<div class="card">
+     <div class="card__info">${value}<img src="images/${suit}.svg" alt="${suit}"></div>
+     <div class="card__info">${value}<img src="images/${suit}.svg" alt="${suit}"></div>
+  </div>`;
     }
 
   }
-
 }
 html += '</div>';
 document.body.innerHTML = html;
+
